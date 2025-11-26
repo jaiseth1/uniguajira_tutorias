@@ -45,9 +45,9 @@ Beneficios esperados al resolverlo
 - Obtener datos para toma de decisiones y mejora del servicio.
 
 
-## 3. REQUERIMIENTOS
+ 3. REQUERIMIENTOS
 
-### 3.1 Requerimientos Funcionales (RF)
+ 3.1 Requerimientos Funcionales (RF)
 1. RF1: El sistema debe permitir al administrador o tutor registrar tutores (nombre, correo).
 2. RF2: El sistema debe permitir registrar estudiantes (nombre, código, programa).
 3. RF3: El sistema debe permitir registrar sesiones de tutoría (tutor, estudiante, fecha/hora, notas).
@@ -55,16 +55,8 @@ Beneficios esperados al resolverlo
 5. RF5: El sistema debe permitir exportar la base de datos SQLite con los datos registrados.
 6. RF6: (Extensión) El sistema podrá generar reportes PDF o CSV de sesiones por rango de fecha.
 
-### 3.2 Requerimientos No Funcionales (RNF)
-- Rendimiento: Las consultas de listados deben responder en menos de 3 segundos en una instancia ligera.
-- Usabilidad: La interfaz debe permitir realizar las acciones principales en máximo 3 clics.
-- Seguridad: (Prototipo) No se incluye autenticación; en producción se requiere HTTPS y almacenamiento seguro de contraseñas.
-- Disponibilidad: En despliegue real se espera un SLA alto; en el prototipo local se ejecuta bajo demanda.
-- Restricciones: El prototipo está implementado en Python 3 y Flask; la base de datos es SQLite para facilidad de despliegue.
 
----
-
-## 4. DISEÑO DE DATOS
+ 4. DISEÑO DE DATOS
 Se incluyen las siguientes entidades principales:
 
 - Tutor (id, name, email, created_at)
@@ -78,21 +70,14 @@ Relaciones:
 
 En el directorio `/docs` se incluye un diagrama ER simple (`er_diagram.png`).
 
----
-
-## 5. ARQUITECTURA, PATRONES DE DISEÑO
+ 5. ARQUITECTURA, PATRONES DE DISEÑO
 Patrón: Arquitectura en capas simple (MVC ligero).
 - Modelos: definidos por tablas SQLite (`app/schema.sql`).
 - Vistas: templates Jinja2 en `app/templates`.
 - Controladores: rutas y lógica en `app/app.py`.
 
-Este prototipo sigue un patrón de "microservicio" monolítico pequeño (aplicación Flask + DB embebida) adecuado para demostración o pruebas.
+6. ANEXOS Y EVIDENCIAS
 
----
-
-## 6. ANEXOS Y EVIDENCIAS
-- Capturas en `/docs` y diagrama ER (`er_diagram.png`).
-- El código fuente está en `app/`.
 - Pasos para ejecutar en **Desarrollo local**:
   1. Clonar el repositorio.
   2. Crear un entorno virtual: `python -m venv venv && source venv/bin/activate` (o `venv\Scripts\activate` en Windows).
