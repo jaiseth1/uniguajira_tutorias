@@ -1,14 +1,14 @@
-# Tutorías Uniguajira - Proyecto de ejemplo
+ Tutorías Uniguajira - Proyecto de ejemplo
 
-## 1. RESUMEN EJECUTIVO
-**Nombre del aplicativo:** Tutorías Uniguajira
+ 1. RESUMEN EJECUTIVO
+Nombre del aplicativo: Tutorías Uniguajira
 
-**Nombres de los integrantes:** Integrante1, Integrante2, Integrante3   (Reemplace por los nombres reales)
+Nombres de los integrantes: Jaiseth Rafael Barros Ojeda
 
-**Problema que aborda**
+Problema que aborda
 Los estudiantes de la Universidad de La Guajira enfrentan dificultades para acceder, registrar y hacer seguimiento de las tutorías académicas. Falta un sistema unificado que permita a la administración, docentes y estudiantes coordinar citas, llevar historial de sesiones y generar reportes.
 
-**Solución propuesta**
+* propuesta
 Una aplicación web ligera para gestionar tutores, estudiantes y sesiones de tutoría, con registro de sesiones, historial y exportación de la base de datos para análisis. Es un prototipo que puede extenderse con autenticación, roles, generación de reportes y notificaciones.
 
 **Alcance principal (módulos clave)**
