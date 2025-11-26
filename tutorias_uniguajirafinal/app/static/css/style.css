@@ -1,0 +1,7 @@
+
+body{font-family:Arial,Helvetica,sans-serif;background:#f6f7fb;color:#222;margin:0;padding:20px}
+.container{max-width:1000px;margin:0 auto}
+.panels{display:flex;gap:16px}
+.panel{background:white;padding:12px;border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,0.08);flex:1}
+.panel form input, .panel form select, .panel form textarea{display:block;width:100%;margin:6px 0;padding:8px}
+button{padding:8px 12px;border:none;background:#2b6cb0;color:#fff;border-radius:6px;cursor:pointer}
